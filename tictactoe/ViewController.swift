@@ -47,8 +47,13 @@ class ViewController: UIViewController {
     
     @IBAction func tableClickedAction(_ sender: UIButton) {
         putOnTable(sender)
-        if(tableIsFull()){
-            resultAlert(title: "Game over biatch...!")
+        if (checkForVictory("X")){
+            resultAlert(title: "Iksi ka fitu")
+        } else if (checkForVictory("O")){
+            resultAlert(title: "Oja ka fitu")
+        }
+        if (tableIsFull()){
+            resultAlert(title: "Bara iks bara o")
         }
     }
     func resultAlert(title: String){
@@ -60,6 +65,41 @@ class ViewController: UIViewController {
     }
     
     func checkForVictory(_ s: String) -> Bool{
+        if thisSymbol(a1, s) && thisSymbol(a2, s) && thisSymbol(a3, s)
+        {
+            return true
+        }
+        if thisSymbol(b1, s) && thisSymbol(b2, s) && thisSymbol(b3, s)
+        {
+            return true
+        }
+        if thisSymbol(c1, s) && thisSymbol(c2, s) && thisSymbol(c3, s)
+        {
+            return true
+        }
+        
+        if thisSymbol(a1, s) && thisSymbol(b1, s) && thisSymbol(c1, s)
+        {
+            return true
+        }
+        if thisSymbol(a2, s) && thisSymbol(b2, s) && thisSymbol(c2, s)
+        {
+            return true
+        }
+        if thisSymbol(a3, s) && thisSymbol(b3, s) && thisSymbol(c3, s)
+        {
+            return true
+        }
+        
+        if thisSymbol(a1, s) && thisSymbol(b2, s) && thisSymbol(c3, s)
+        {
+            return true
+        }
+        if thisSymbol(a3, s) && thisSymbol(b2, s) && thisSymbol(c1, s)
+        {
+            return true
+        }
+                
         
         return false
     }
