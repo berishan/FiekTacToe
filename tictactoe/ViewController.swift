@@ -26,17 +26,65 @@ class ViewController: UIViewController {
     
     var firstTurn = Turn.X
     var currentTurn = Turn.X
+    var table = [UIButton]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        initTable()
     }
 
-    @IBAction func boardClickedAction(_ sender: UIButton) {
-        putOnBoard(sender)
+    func initTable(){
+        table.append(a1)
+        table.append(a2)
+        table.append(a3)
+        table.append(b1)
+        table.append(b2)
+        table.append(b3)
+        table.append(c1)
+        table.append(c2)
+        table.append(c3)
     }
     
-    func putOnBoard(_ sender: UIButton) {
+    @IBAction func tableClickedAction(_ sender: UIButton) {
+        putOnTable(sender)
+        if(tableIsFull()){
+            resultAlert(title: "Game over biatch...!")
+        }
+    }
+    func resultAlert(title: String){
+        let ac = UIAlertController(title: title, message: nil, preferredStyle: .actionSheet)
+        ac.addAction(UIAlertAction(title: "Reset", style: .default, handler: { (_) in
+            self.resetTable()
+        }))
+        self.present(ac, animated: true)
+    }
+    
+    func checkForVictory(_ s: String) -> Bool{
+        
+        return false
+    }
+    
+    func thisSymbol(_ button: UIButton, _ symbol: String) -> Bool {
+        return button.title(for: .normal) == symbol
+    }
+    
+    func resetTable(){
+        for button in table {
+            button.setTitle(nil, for: .normal)
+            button.isEnabled = true
+        }
+        
+    }
+    func tableIsFull() -> Bool {
+        for button in table {
+            if(button.title(for: .normal) == nil){
+                return false
+            }
+        }
+        return true
+    }
+    
+    func putOnTable(_ sender: UIButton) {
         if(sender.title(for: .normal) == nil){
             
             if(currentTurn == Turn.O){

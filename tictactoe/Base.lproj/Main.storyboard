@@ -30,7 +30,7 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="boardClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T9P-AE-3mp"/>
+                                                    <action selector="tableClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T9P-AE-3mp"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oup-va-EEk">
@@ -41,7 +41,7 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="boardClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9fQ-Xc-adx"/>
+                                                    <action selector="tableClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9fQ-Xc-adx"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="541-2q-ekh">
@@ -52,7 +52,7 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="boardClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P3C-YR-G3x"/>
+                                                    <action selector="tableClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P3C-YR-G3x"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -68,7 +68,7 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="boardClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4A6-ni-mgK"/>
+                                                    <action selector="tableClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4A6-ni-mgK"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Di9-yi-dhg">
@@ -79,7 +79,7 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="boardClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pEF-A1-C5h"/>
+                                                    <action selector="tableClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pEF-A1-C5h"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cse-Br-hhi">
@@ -90,7 +90,7 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="boardClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K1l-BB-JuO"/>
+                                                    <action selector="tableClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K1l-BB-JuO"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -106,7 +106,7 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="boardClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJU-JH-n42"/>
+                                                    <action selector="tableClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJU-JH-n42"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLT-Hn-LOt">
@@ -117,7 +117,7 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="boardClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfa-sv-g2d"/>
+                                                    <action selector="tableClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfa-sv-g2d"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3y9-60-Z4T">
@@ -128,7 +128,7 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="boardClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="baW-x8-1pb"/>
+                                                    <action selector="tableClickedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="baW-x8-1pb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
