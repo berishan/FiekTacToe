@@ -145,7 +145,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-E3-F63">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0y-E3-F63">
                                 <rect key="frame" x="171" y="101" width="47.666666666666657" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
                                 <nil key="textColor"/>
@@ -158,6 +158,8 @@
                             <constraint firstItem="aow-D2-1c5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Ce7-xD-S8M"/>
                             <constraint firstItem="aow-D2-1c5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="WJV-2n-2Fs"/>
                             <constraint firstItem="c7s-0J-nYG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Yhs-0q-Up5"/>
+                            <constraint firstItem="X0y-E3-F63" firstAttribute="firstBaseline" secondItem="c7s-0J-nYG" secondAttribute="baseline" constant="64" symbolType="layoutAnchor" id="amT-Ie-UcT"/>
+                            <constraint firstItem="X0y-E3-F63" firstAttribute="top" secondItem="c7s-0J-nYG" secondAttribute="bottom" constant="8" symbolic="YES" id="dwv-Ql-ZOF"/>
                             <constraint firstItem="X0y-E3-F63" firstAttribute="centerX" secondItem="c7s-0J-nYG" secondAttribute="centerX" id="sSl-xJ-f7L"/>
                             <constraint firstItem="c7s-0J-nYG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="t6m-Gm-TqM"/>
                             <constraint firstItem="aow-D2-1c5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tc8-wm-qDe"/>
