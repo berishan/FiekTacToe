@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         }
         if (tableIsFull()){
             resultAlert(title: "Draw")
-            // save to db
+            // todo: save to db
         }
     }
     func resultAlert(title: String){
