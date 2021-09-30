@@ -48,15 +48,15 @@ class ViewController: UIViewController {
     @IBAction func tableClickedAction(_ sender: UIButton) {
         putOnTable(sender)
         if (checkForVictory("X")){
-            resultAlert(title: "Iksi ka fitu")
+            resultAlert(title: "X has won")
+            // save to db
         } else if (checkForVictory("O")){
-            resultAlert(title: "Oja ka fitu")
+            resultAlert(title: "O has won")
+            // save to db
         }
         if (tableIsFull()){
-            resultAlert(title: "Bara iks bara o")
-//            let vc = storyboard?.instantiateViewController(withIdentifier: "homepage_vc") as! HomePageController
-//            present(vc, animated: true)
-            
+            resultAlert(title: "Draw")
+            // save to db
         }
     }
     func resultAlert(title: String){
