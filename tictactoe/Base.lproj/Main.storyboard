@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tictactoe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="playView" id="BYZ-38-t0r" customClass="ViewController" customModule="tictactoe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,6 +213,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                                     <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="play:" destination="EI1-8Z-ZJ3" eventType="touchUpInside" id="8a0-3G-43C"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgd-B3-FZb">
                                                 <rect key="frame" x="197.66666666666669" y="0.0" width="187.66666666666669" height="230.33333333333334"/>
@@ -221,6 +224,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                                     <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="showHistory:" destination="EI1-8Z-ZJ3" eventType="touchUpInside" id="Xkg-jj-0q7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

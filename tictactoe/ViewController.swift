@@ -53,9 +53,9 @@ class ViewController: UIViewController {
             resultAlert(title: "Oja ka fitu")
         }
         if (tableIsFull()){
-//            resultAlert(title: "Bara iks bara o")
-            let vc = storyboard?.instantiateViewController(withIdentifier: "homepage_vc") as! HomePageController
-            present(vc, animated: true)
+            resultAlert(title: "Bara iks bara o")
+//            let vc = storyboard?.instantiateViewController(withIdentifier: "homepage_vc") as! HomePageController
+//            present(vc, animated: true)
             
         }
     }

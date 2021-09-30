@@ -11,19 +11,22 @@ class HomePageController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
+    @IBOutlet weak var playBtn: UIButton!
+    @IBOutlet weak var historyBtn: UIButton!
+    
+    @IBAction func play(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "playView") as! ViewController
+        present(vc, animated: true)
+     }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func showHistory(_ sender: UIButton) {
+        
     }
-    */
-
-}
+    
+    }
+    
+    
+    
