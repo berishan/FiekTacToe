@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController {
+    
+    let realm = try! Realm()
+    
     enum Turn {
         case X
         case O
@@ -45,17 +49,34 @@ class ViewController: UIViewController {
         table.append(c3)
     }
     
+    func save(obj: TicTacToeDb) {
+        realm.beginWrite()
+        realm.add(obj)
+        try! realm.commitWrite()
+    }
+    
     @IBAction func tableClickedAction(_ sender: UIButton) {
         putOnTable(sender)
+        let winner = TicTacToeDb()
         if (checkForVictory("X")){
             resultAlert(title: "X has won")
+            save(obj: winner)
             // save to db
         } else if (checkForVictory("O")){
             resultAlert(title: "O has won")
+            winner.winner = "O"
+            winner.date = Date()
+            save(obj: winner)
             // save to db
         }
         if (tableIsFull()){
             resultAlert(title: "Draw")
+            // po gjun exception n draw duhet me shiku, nashta duhet ni koneksion me bo mrena qitu
+//            winner.winner = "DRAW"
+//            winner.date = Date()
+//            realm.beginWrite()
+//            realm.add(winner)
+//            try! realm.commitWrite()
             // todo: save to db
         }
     }
@@ -138,5 +159,10 @@ class ViewController: UIViewController {
         }
     }
     
+}
+
+class TicTacToeDb: Object {
+    @objc dynamic var winner: String?
+    @objc dynamic var date: Date?
 }
 
