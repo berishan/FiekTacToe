@@ -60,24 +60,20 @@ class ViewController: UIViewController {
         let winner = TicTacToeDb()
         if (checkForVictory("X")){
             resultAlert(title: "X has won")
+            winner.winner = "X"
+            winner.date = Date.init()
             save(obj: winner)
-            // save to db
         } else if (checkForVictory("O")){
             resultAlert(title: "O has won")
             winner.winner = "O"
-            winner.date = Date()
+            winner.date = Date.init()
             save(obj: winner)
-            // save to db
         }
-        if (tableIsFull()){
+        else if (tableIsFull()){
             resultAlert(title: "Draw")
-            // po gjun exception n draw duhet me shiku, nashta duhet ni koneksion me bo mrena qitu
-//            winner.winner = "DRAW"
-//            winner.date = Date()
-//            realm.beginWrite()
-//            realm.add(winner)
-//            try! realm.commitWrite()
-            // todo: save to db
+            winner.winner = "DRAW"
+            winner.date = Date.init()
+            save(obj: winner)
         }
     }
     func resultAlert(title: String){
@@ -159,10 +155,22 @@ class ViewController: UIViewController {
         }
     }
     
+    func test() -> List<TicTacToeDb> {
+        let winners = realm.objects(TicTacToeDb.self)
+        let test: List<TicTacToeDb> = List()
+        for winner in winners {
+            let t = TicTacToeDb()
+            t.winner = winner.winner
+            t.date = winner.date
+            test.append(t)
+        }
+        return test
+    }
+    
 }
 
 class TicTacToeDb: Object {
-    @objc dynamic var winner: String?
-    @objc dynamic var date: Date?
+    @objc dynamic var winner: String? = ""
+    @objc dynamic var date: Date? = Date.init()
 }
 
