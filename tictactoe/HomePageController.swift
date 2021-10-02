@@ -23,7 +23,8 @@ class HomePageController: UIViewController {
      }
 
     @IBAction func showHistory(_ sender: UIButton) {
-        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "historyView") as! HistoryController
+        present(vc, animated: true)
     }
     
     }

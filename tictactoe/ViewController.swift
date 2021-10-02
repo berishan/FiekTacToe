@@ -155,18 +155,6 @@ class ViewController: UIViewController {
         }
     }
     
-    func test() -> List<TicTacToeDb> {
-        let winners = realm.objects(TicTacToeDb.self)
-        let test: List<TicTacToeDb> = List()
-        for winner in winners {
-            let t = TicTacToeDb()
-            t.winner = winner.winner
-            t.date = winner.date
-            test.append(t)
-        }
-        return test
-    }
-    
 }
 
 class TicTacToeDb: Object {

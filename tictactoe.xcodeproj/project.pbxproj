@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		6672E7032703870E006F44E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6672E7022703870E006F44E9 /* Assets.xcassets */; };
 		6672E7112703870E006F44E9 /* tictactoeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6672E7102703870E006F44E9 /* tictactoeTests.swift */; };
 		6672E71C2703870E006F44E9 /* tictactoeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6672E71B2703870E006F44E9 /* tictactoeUITests.swift */; };
+		66A5D23E2708E89A006BE618 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5D23D2708E89A006BE618 /* HistoryController.swift */; };
 		D00A1BD63D33CBEF3E089F02 /* Pods_tictactoe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F18B5395CA9764B6F7C01F5 /* Pods_tictactoe.framework */; };
 		D58C01C72704E168004B23E8 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58C01C62704E168004B23E8 /* HomePageController.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		6672E7172703870E006F44E9 /* tictactoeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tictactoeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6672E71B2703870E006F44E9 /* tictactoeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictactoeUITests.swift; sourceTree = "<group>"; };
 		6672E71D2703870E006F44E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66A5D23D2708E89A006BE618 /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
 		6F18B5395CA9764B6F7C01F5 /* Pods_tictactoe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tictactoe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A167C2A5211E3026F407EF6 /* Pods-tictactoe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tictactoe.debug.xcconfig"; path = "Target Support Files/Pods-tictactoe/Pods-tictactoe.debug.xcconfig"; sourceTree = "<group>"; };
 		D58C01C62704E168004B23E8 /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				6672E7072703870E006F44E9 /* Info.plist */,
 				6672E6FF2703870D006F44E9 /* tictactoe.xcdatamodeld */,
 				D58C01C62704E168004B23E8 /* HomePageController.swift */,
+				66A5D23D2708E89A006BE618 /* HistoryController.swift */,
 			);
 			path = tictactoe;
 			sourceTree = "<group>";
@@ -152,7 +155,6 @@
 				9A167C2A5211E3026F407EF6 /* Pods-tictactoe.debug.xcconfig */,
 				EBD340C0A7897B127494D935 /* Pods-tictactoe.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -333,6 +335,7 @@
 				D58C01C72704E168004B23E8 /* HomePageController.swift in Sources */,
 				6672E6F72703870D006F44E9 /* AppDelegate.swift in Sources */,
 				6672E7012703870D006F44E9 /* tictactoe.xcdatamodeld in Sources */,
+				66A5D23E2708E89A006BE618 /* HistoryController.swift in Sources */,
 				6672E6F92703870D006F44E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
