@@ -16,6 +16,8 @@ class HistoryController: UIViewController, UITableViewDelegate, UITableViewDataS
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
+        let nib = UINib(nibName: "HistoryTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "HistoryTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -25,8 +27,9 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
 }
 
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-    cell.textLabel?.text = myData[indexPath.row]
+    let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryTableViewCell", for: indexPath) as! HistoryTableViewCell
+    cell.lblWinner.text = myData[indexPath.row]
+    cell.lblDate.text = myData[indexPath.row]
     return cell
 }
     
